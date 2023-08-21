@@ -1,0 +1,152 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add other CSS links here -->
+  <style>
+    /* Custom CSS for cart page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .cart-item img {
+      max-width: 80px;
+    }
+
+    .quantity-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Replace with your header code or dynamically inject header.html here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart Content Section -->
+  <section class="container mt-4">
+    <div class="row">
+      <!-- Cart Items -->
+      <div class="col-lg-8">
+        <!-- Cart Item 1 -->
+        <div class="cart-item row mb-3">
+          <div class="col-4">
+            <img src="path/to/product1.jpg" alt="Product 1" class="img-fluid">
+          </div>
+          <div class="col-5">
+            <h5>Product 1</h5>
+            <p>Price: $50.00</p>
+            <button class="btn btn-link text-danger"><i class="fas fa-trash"></i> Delete</button>
+          </div>
+          <div class="col-3">
+            <div class="quantity-form">
+              <span class="quantity-btn">-</span>
+              <input type="number" class="form-control" value="1" min="1">
+              <span class="quantity-btn">+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cart items here (repeat the cart-item div) -->
+        <!-- Cart Item 2 -->
+        <div class="cart-item row mb-3">
+          <!-- Replace with your cart item details -->
+        </div>
+        <!-- Add more cart items here -->
+
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header bg-info text-white">
+            Summary
+          </div>
+          <div class="card-body">
+            <p>Total: $200.00</p>
+            <p>Shipping: $10.00</p>
+            <hr>
+            <p class="font-weight-bold">Total Cost: $210.00</p>
+            <button class="btn btn-primary btn-block">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Replace with your footer code or dynamically inject footer.html here -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Footer content here -->
+        </div>
+        <hr class="bg-white my-4">
+        <div class="text-center">
+          &copy; 2023 Your Website Name. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  <!-- Add Bootstrap JS and jQuery links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add other JS scripts here -->
+</body>
+
+</html>
